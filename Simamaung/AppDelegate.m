@@ -17,6 +17,49 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UIFont *defaultFontType = [UIFont fontWithName:@"HelveticaNeue"
+                                              size:14];
+    
+    NSDictionary *defaultFontAttributes = [NSDictionary dictionaryWithObject:defaultFontType
+                                                                      forKey:NSFontAttributeName];
+    
+    //  Title font configuration
+    UIFont *titleFontType = [UIFont fontWithName:@"HelveticaNeue-Bold"
+                                            size:17];
+    
+    NSDictionary *titleFontAttributes = [NSDictionary dictionaryWithObjects:@[titleFontType, [UIColor whiteColor]]
+                                                                    forKeys:@[NSFontAttributeName, NSForegroundColorAttributeName]];
+
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:titleFontAttributes];
+    //  Segmented control configuration
+    [[UISegmentedControl appearance] setTitleTextAttributes:defaultFontAttributes
+                                                   forState:UIControlStateNormal];
+    
+    
+    //  Navigation bar button item configuration
+    [[UIBarButtonItem appearance] setTitleTextAttributes:defaultFontAttributes
+                                                forState:UIControlStateNormal];
+    
+    //  Back button configuration
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+                                                         forBarMetrics:UIBarMetricsDefault];
+    
+    UIImage *originalBackButtonImage = [UIImage imageNamed:@"icon-back.png"];
+    CGSize backButtonSize = CGSizeMake(33, 33);
+    UIGraphicsBeginImageContextWithOptions(backButtonSize, NO, 0.0);
+    [originalBackButtonImage drawInRect:CGRectMake(0, 0, backButtonSize.width, backButtonSize.height)];
+    UIImage *backButtonImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    backButtonImage = [backButtonImage resizableImageWithCapInsets:UIEdgeInsetsMake(0, 33, 0, 0)];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage
+                                                      forState:UIControlStateNormal
+                                                    barMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar"] forBarMetrics:UIBarMetricsDefault];
+    
+    
     return YES;
 }
 

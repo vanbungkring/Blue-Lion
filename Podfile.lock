@@ -29,8 +29,10 @@ PODS:
   - SDWebImage (3.7.1):
     - SDWebImage/Core (= 3.7.1)
   - SDWebImage/Core (3.7.1)
+  - SVPullToRefresh (0.4.1)
   - SWRevealTableViewCell (0.3.5)
   - SWRevealViewController (2.3.0)
+  - THLabel (1.4.6)
 
 DEPENDENCIES:
   - AFNetworking
@@ -39,8 +41,10 @@ DEPENDENCIES:
   - Realm
   - REMenu
   - SDWebImage
+  - SVPullToRefresh
   - SWRevealTableViewCell (~> 0.3)
   - SWRevealViewController (~> 2.3)
+  - THLabel
 
 SPEC CHECKSUMS:
   AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
@@ -49,7 +53,9 @@ SPEC CHECKSUMS:
   Realm: 81adfc7f43f9301f40bbc46d5e8a10aaf71b9504
   REMenu: e3988747d83f9e8f49f244bd3f1fb8b0900e8741
   SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  SVPullToRefresh: d5161ebc833a38b465364412e5e307ca80bbb190
   SWRevealTableViewCell: 1137e80b742b3c92da00865a3e426f349db17ebc
   SWRevealViewController: f6d80638b8e12323e87ac79562345403a799cb77
+  THLabel: 1cf3bad0f33c2bcdee075ce2e4f080791a374d95
 
 COCOAPODS: 0.35.0

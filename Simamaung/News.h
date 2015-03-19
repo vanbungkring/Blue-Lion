@@ -11,14 +11,14 @@
 
 @interface News : NSObject
 
-@property (assign, nonatomic)  NSInteger id;
-//@property  NSDate *date;
-@property (strong, nonatomic)   NSString *slug;
-@property (strong, nonatomic)   NSString *url;
-@property (strong, nonatomic)   NSString *title;
-@property (strong, nonatomic)   NSString *title_plain;
-@property (strong, nonatomic)   NSString *content;
-@property (strong, nonatomic)   NSString *thumbnail;
-@property (assign, nonatomic)   NSInteger catID;
+@property (strong, nonatomic) NSString *slug;
+@property (strong, nonatomic) NSString *url;
+@property (strong, nonatomic) NSString *title;
+@property (strong, nonatomic) NSDictionary *author;
+@property (strong, nonatomic) NSString *title_plain;
+@property (strong, nonatomic) NSString *content;
+@property (strong, nonatomic) NSString *thumbnail;
+@property (strong, nonatomic) NSString *categories;
+@property (assign, nonatomic) NSDictionary *thumbnail_images;
 
 @end

@@ -10,8 +10,11 @@
 #import "NewsTableViewCell.h"
 #import "APIManager+News.h"
 #import "News.h"
+#import <SVPullToRefresh.h>
+#import <REMenu.h>
 @interface NewsTableViewController ()
 @property (nonatomic,strong)NSMutableArray *dataArray;
+@property (nonatomic,strong)REMenu *menu;
 @end
 
 @implementation NewsTableViewController
@@ -28,6 +31,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+}
+- (IBAction)openCategories:(id)sender {
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,11 +42,10 @@
     // Dispose of any resources that can be recreated.
 }
 -(void)didReceiveNewsContent:(NSArray *)news{
-    NSLog(@"news-->%@",news);
-        if(![_dataArray containsObject:news]){
-            [_dataArray addObject:news];
-        }
-    
+    NSLog(@"news-->%d",[news count]);
+    if(![_dataArray containsObject:news]){
+        [_dataArray addObjectsFromArray:news];
+    }
     [self.tableView reloadData];
     
 }
@@ -61,11 +67,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    News *n = [_dataArray objectAtIndex:indexPath.row];
     NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
-    cell.newsTitle.text =n.title;
-//
+    //nslog
+    cell.news  = [_dataArray objectAtIndex:indexPath.row];
     return cell;
 }
 /*

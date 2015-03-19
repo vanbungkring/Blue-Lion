@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <THLabel.h>
 @class News;
 @interface NewsTableViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *categoryImage;
@@ -14,4 +15,5 @@
 @property (strong, nonatomic) IBOutlet UIImageView *newsImage;
 @property (strong, nonatomic) IBOutlet UILabel *newsTitle;
 
+-(void)setNews:(News *)news;
 @end

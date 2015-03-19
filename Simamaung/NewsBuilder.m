@@ -10,25 +10,34 @@
 #import "News.h"
 @implementation NewsBuilder
 + (NSArray *)newsFromArray:(NSArray *)array{
-    NSMutableArray *newslistArray = [[NSMutableArray alloc] init];
-    News *newsList = [[News alloc] init];
-    for (int i=0; i<array.count; i++) {
+    NSMutableArray *blogListArray = [[NSMutableArray alloc] init];
+    for (NSDictionary *guidesDictionary in array) {
+        News *blogList = [[News alloc] init];
         
-        for (NSString *key in array[i]) {
+        for (NSString *key in guidesDictionary) {
             
-            id currentValue = [array[i] valueForKey:key];
-            NSLog(@"loop ke %d keyy-->%@",i,key);
+            id currentValue = [guidesDictionary valueForKey:key];
+            
             if (currentValue == [NSNull null]) {
                 currentValue = nil;
             }
-            if ([newsList respondsToSelector:NSSelectorFromString(key)]) {
-                [newsList setValue:currentValue forKey:key];
+            
+            if ([blogList respondsToSelector:NSSelectorFromString(key)]) {
+                
+                if([key isEqualToString:@"categories"]){
+                    blogList.categories = [[[guidesDictionary valueForKey:key]objectAtIndex:0]objectForKey:@"title"];
+                    continue;
+                    
+                }
+                
+                [blogList setValue:currentValue forKey:key];
             }
-            
-            
         }
-        [newslistArray addObject:newsList];
+        
+        [blogListArray addObject:blogList];
+        
     }
-    return newslistArray;
+    
+    return blogListArray;
 }
 @end
