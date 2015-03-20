@@ -10,6 +10,7 @@
 #import "NewsTableViewCell.h"
 #import "APIManager+News.h"
 #import "News.h"
+#import "UIViewController+NetraNavigationBar.h"
 #import <SVPullToRefresh.h>
 #import <REMenu.h>
 @interface NewsTableViewController ()
@@ -24,7 +25,7 @@
     self.apiManager = [[APIManager alloc] init];
     self.apiManager.newsDelegate = self;
     _dataArray = [[NSMutableArray alloc]init];
-    
+    [self setNetraDefaultNavigationBar];
     [self.apiManager fetchNews:1];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -42,7 +43,6 @@
     // Dispose of any resources that can be recreated.
 }
 -(void)didReceiveNewsContent:(NSArray *)news{
-    NSLog(@"news-->%d",[news count]);
     if(![_dataArray containsObject:news]){
         [_dataArray addObjectsFromArray:news];
     }

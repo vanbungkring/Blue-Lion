@@ -36,5 +36,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Mark Simonson - Proxima Nova ScOsf Semibold.otf</string>
+		<string>Mark Simonson - Proxima Nova Thin.otf</string>
+		<string>Mark Simonson - Proxima Nova Semibold.otf</string>
+	</array>
 </dict>
 </plist>

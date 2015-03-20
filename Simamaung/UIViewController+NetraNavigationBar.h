@@ -1,5 +1,5 @@
 //
-//  Navigation+ViewController.h
+//  UIViewController+NetraNavigationBar.h
 //  Simamaung
 //
 //  Created by Arie Prasetyo on 3/19/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Navigation_ViewController : UIViewController
-
+@interface UIViewController(NetraNavigationBar)
+-(void)setNetraDefaultNavigationBar;
 @end

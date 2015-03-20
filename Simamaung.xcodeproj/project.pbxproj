@@ -20,9 +20,12 @@
 		0C530DA21AB7E14000AD733C /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C530DA11AB7E14000AD733C /* APIManager.m */; };
 		0C530DA51AB7E18000AD733C /* APIManager+News.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C530DA41AB7E18000AD733C /* APIManager+News.m */; };
 		0C530DAC1AB7E33200AD733C /* NewsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C530DAB1AB7E33200AD733C /* NewsBuilder.m */; };
+		0CAE67181ABAF06C00D341D8 /* UIViewController+NetraNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE67171ABAF06C00D341D8 /* UIViewController+NetraNavigationBar.m */; };
+		0CAE671C1ABB46AE00D341D8 /* Mark Simonson - Proxima Nova ScOsf Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CAE671A1ABB45BF00D341D8 /* Mark Simonson - Proxima Nova ScOsf Semibold.otf */; };
+		0CAE671D1ABB46B200D341D8 /* Mark Simonson - Proxima Nova Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CAE671B1ABB45BF00D341D8 /* Mark Simonson - Proxima Nova Thin.otf */; };
+		0CAE671F1ABB47ED00D341D8 /* Mark Simonson - Proxima Nova Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CAE671E1ABB47BE00D341D8 /* Mark Simonson - Proxima Nova Semibold.otf */; };
 		0CC642E91ABAEB5C0035CDD2 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC642E81ABAEB5C0035CDD2 /* NewsDetailViewController.m */; };
 		0CC642ED1ABAEB860035CDD2 /* LeftMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC642EC1ABAEB860035CDD2 /* LeftMenuTableViewController.m */; };
-		0CC642F01ABAEEF40035CDD2 /* Navigation+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC642EF1ABAEEF40035CDD2 /* Navigation+ViewController.m */; };
 		58CBB575B03E1C6A7AA0BD36 /* libPods-Simamaung.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4AD958654A568EDDD61587 /* libPods-Simamaung.a */; };
 /* End PBXBuildFile section */
 
@@ -64,12 +67,15 @@
 		0C530DAA1AB7E33200AD733C /* NewsBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBuilder.h; sourceTree = "<group>"; };
 		0C530DAB1AB7E33200AD733C /* NewsBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBuilder.m; sourceTree = "<group>"; };
 		0C8D4F261AB9717E005D0AE8 /* Constans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constans.h; sourceTree = "<group>"; };
+		0CAE67161ABAF06C00D341D8 /* UIViewController+NetraNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NetraNavigationBar.h"; sourceTree = "<group>"; };
+		0CAE67171ABAF06C00D341D8 /* UIViewController+NetraNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NetraNavigationBar.m"; sourceTree = "<group>"; };
+		0CAE671A1ABB45BF00D341D8 /* Mark Simonson - Proxima Nova ScOsf Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova ScOsf Semibold.otf"; sourceTree = "<group>"; };
+		0CAE671B1ABB45BF00D341D8 /* Mark Simonson - Proxima Nova Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Thin.otf"; sourceTree = "<group>"; };
+		0CAE671E1ABB47BE00D341D8 /* Mark Simonson - Proxima Nova Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Semibold.otf"; sourceTree = "<group>"; };
 		0CC642E71ABAEB5C0035CDD2 /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
 		0CC642E81ABAEB5C0035CDD2 /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
 		0CC642EB1ABAEB860035CDD2 /* LeftMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewController.h; sourceTree = "<group>"; };
 		0CC642EC1ABAEB860035CDD2 /* LeftMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewController.m; sourceTree = "<group>"; };
-		0CC642EE1ABAEEF40035CDD2 /* Navigation+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Navigation+ViewController.h"; sourceTree = "<group>"; };
-		0CC642EF1ABAEEF40035CDD2 /* Navigation+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Navigation+ViewController.m"; sourceTree = "<group>"; };
 		2AFFCA6395BA84DFD376A7E6 /* Pods-Simamaung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simamaung.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simamaung/Pods-Simamaung.release.xcconfig"; sourceTree = "<group>"; };
 		2F4AD958654A568EDDD61587 /* libPods-Simamaung.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Simamaung.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8584B14FF608F050736C410E /* Pods-Simamaung.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simamaung.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simamaung/Pods-Simamaung.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 		0C530D681AB7451E00AD733C /* Simamaung */ = {
 			isa = PBXGroup;
 			children = (
+				0CAE67191ABB45AF00D341D8 /* Font */,
 				0C8D4F251AB97167005D0AE8 /* Helper */,
 				0C530D9F1AB7E10800AD733C /* Manager */,
 				0C530D981AB7DD6200AD733C /* Model */,
@@ -231,10 +238,20 @@
 			isa = PBXGroup;
 			children = (
 				0C8D4F261AB9717E005D0AE8 /* Constans.h */,
-				0CC642EE1ABAEEF40035CDD2 /* Navigation+ViewController.h */,
-				0CC642EF1ABAEEF40035CDD2 /* Navigation+ViewController.m */,
+				0CAE67161ABAF06C00D341D8 /* UIViewController+NetraNavigationBar.h */,
+				0CAE67171ABAF06C00D341D8 /* UIViewController+NetraNavigationBar.m */,
 			);
 			name = Helper;
+			sourceTree = "<group>";
+		};
+		0CAE67191ABB45AF00D341D8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0CAE671E1ABB47BE00D341D8 /* Mark Simonson - Proxima Nova Semibold.otf */,
+				0CAE671A1ABB45BF00D341D8 /* Mark Simonson - Proxima Nova ScOsf Semibold.otf */,
+				0CAE671B1ABB45BF00D341D8 /* Mark Simonson - Proxima Nova Thin.otf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 		0CC642E61ABAEB290035CDD2 /* News Detail */ = {
@@ -356,6 +373,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C530D751AB7451E00AD733C /* Main.storyboard in Resources */,
+				0CAE671C1ABB46AE00D341D8 /* Mark Simonson - Proxima Nova ScOsf Semibold.otf in Resources */,
+				0CAE671D1ABB46B200D341D8 /* Mark Simonson - Proxima Nova Thin.otf in Resources */,
+				0CAE671F1ABB47ED00D341D8 /* Mark Simonson - Proxima Nova Semibold.otf in Resources */,
 				0C530D7A1AB7451E00AD733C /* LaunchScreen.xib in Resources */,
 				0C530D771AB7451E00AD733C /* Images.xcassets in Resources */,
 			);
@@ -415,8 +435,8 @@
 				0C530D971AB7DBBD00AD733C /* NewsTableViewCell.m in Sources */,
 				0C530DA21AB7E14000AD733C /* APIManager.m in Sources */,
 				0CC642E91ABAEB5C0035CDD2 /* NewsDetailViewController.m in Sources */,
+				0CAE67181ABAF06C00D341D8 /* UIViewController+NetraNavigationBar.m in Sources */,
 				0C530D6C1AB7451E00AD733C /* main.m in Sources */,
-				0CC642F01ABAEEF40035CDD2 /* Navigation+ViewController.m in Sources */,
 				0CC642ED1ABAEB860035CDD2 /* LeftMenuTableViewController.m in Sources */,
 				0C530D9E1AB7DD8B00AD733C /* ModelManager.m in Sources */,
 				0C530DAC1AB7E33200AD733C /* NewsBuilder.m in Sources */,
